@@ -24,13 +24,16 @@ class BankAccount:
 print("Please enter your Bank Account Name and your Current Balance.")
 account= input("Enter your Bank Account Name: ")
 balance= input("Enter your current balance: ")
-test= BankAccount()
+test= BankAccount(account, balance)
 print(test)
+
 dec= input("\nWould you like to Withdraw or Deposit? (W / D): ")
 decision= dec.upper()
 if decision == "W":
-  BankAccount.withdraw(self, input_Withdraw)
+  input_Withdraw= float(input("Enter the amount you would like to withdraw: "))
+  test.withdraw(self, input_Withdraw)
 elif decision == "D":
-  BankAccount.deposit(self, input_Dep)
+  input_Dep= float(input("Enter the amount you would like to withdraw: "))
+  test.deposit(self, input_Dep)
 else:
   print("Error: Enter a valid input Mr. {self.account}")

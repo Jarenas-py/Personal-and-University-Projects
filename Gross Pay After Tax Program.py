@@ -29,3 +29,12 @@ def netPay(gross_Pay):
 
 gross_Pay= int(input("Enter the gross pay: "))
 print(f"Net Pay= {netPay(gross_Pay)}")
+
+"""Create a program that ouputs the following
+Tax Rate: 
+Tax Amount: 
+Amount to Pay after Taxes: 
+
+If the gross pay is less than 10000, then tax rate is 0%
+If the gross pay is equal to and more than 10000 but less than 50000, then tax rate is 10%, then tax rate is 0%
+If the tax is more than or equal to 50000, then tax rate is 40%"""

@@ -22,20 +22,17 @@ class tax:
             total_Amount= input_Gross + tax_Amount
             print(f"Total Amount to Pay after Taxes: {total_Amount}")
             
-    def __str__(self):
-        pass
-            
 while(True):
     print("""
 Total Amount After Tax Program
 Enter the Amount you want to pay and the program will calculate the total amount you need to pay after taxes""")
     
-    input_Gross= float(input(f"Input that amount to pay: "))
+    input_Gross= input(f"Input that amount to pay: ")
     taxing= tax(input_Gross)
-    print(taxing)
+    taxing.to_Pay(input_Gross)
     
     decision= input("Do you want to continue? (y/n): ")
     dec= decision.lower
-    if dec == n:
+    if dec == "n":
         print("Thank you for using our program!")
         break
